@@ -80,6 +80,10 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libvulkan
 
+# Dex
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
+
 # Vulkan
 PRODUCT_PACKAGES += \
     libvulkan
