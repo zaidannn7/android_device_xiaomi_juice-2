@@ -75,6 +75,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    debug.hwui.use_hint_manager=true \
+    debug.hwui.target_cpu_time_percent=30
 
 # Display
 PRODUCT_PACKAGES += \
