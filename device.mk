@@ -65,6 +65,10 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
+# Camera
+PRODUCT_PACKAGES += \
+    GrapheneCamera
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
