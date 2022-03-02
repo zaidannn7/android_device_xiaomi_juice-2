@@ -68,11 +68,14 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     GrapheneCamera
-
+    
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.logInfoMask=false \
     persist.camera.CDS=off
-    
+
+# Dex
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
