@@ -4,13 +4,40 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit device configurations
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Project Arcana stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TARGET_INCLUDE_PIXEL_CHARGER  := true
 
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_SCREEN_WIDTH := 1080
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := false
+
+# Rice flags
+RICE_MAINTAINER := Darknius
+
+# Quick tap feature
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Bloom and Living Universe Pixel Wallpapers
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
+# Pixel Now playing feature
+TARGET_SUPPORTS_NOW_PLAYING := true
+
+# Pixel charger animation
+USE_PIXEL_CHARGER_IMAGES := true
+
+# Google Recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# Google Assistant
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_juice
@@ -19,8 +46,4 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Fingerprint
-BUILD_FINGERPRINT := POCO/citrus_eea/citrus:11/RKQ1.201004.002/V12.5.3.0.RJFEUXM:user/release-keys
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="citrus_eea-user 11 RKQ1.201004.002 V12.5.3.0.RJFEUXM release-keys"
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
