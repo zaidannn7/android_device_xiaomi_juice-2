@@ -7,13 +7,13 @@
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common aosp stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 TARGET_INCLUDE_PIXEL_CHARGER  := true
 
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_juice
+PRODUCT_NAME := aosp_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
