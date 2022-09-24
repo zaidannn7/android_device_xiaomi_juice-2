@@ -204,6 +204,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     debug.sf.early.app.duration=16600000 \
     debug.sf.earlyGl.sf.duration=16600000 \
     debug.sf.earlyGl.app.duration=16600000
+    
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.sf.native_mode=2 \
+    vendor.display.qdcm.disable_factory_mode=1 \
+    vendor.display.qdcm.mode_combine=1
 
 # Radio
 PRODUCT_PACKAGES += \
