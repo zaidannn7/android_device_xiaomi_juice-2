@@ -69,6 +69,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GrapheneCamera
 
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.camera.logInfoMask=false
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \

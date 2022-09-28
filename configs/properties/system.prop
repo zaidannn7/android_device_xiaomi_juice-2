@@ -1,6 +1,5 @@
 # Camera
 log.tag.CHIUSECASE=ERROR
-persist.vendor.camera.logInfoMask=false
 
 # IMS
 persist.dbg.volte_avail_ovr=1
