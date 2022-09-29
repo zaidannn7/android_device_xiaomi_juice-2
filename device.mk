@@ -90,6 +90,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.traced.enable=0
+
 # Vulkan
 PRODUCT_PACKAGES += \
     libvulkan
